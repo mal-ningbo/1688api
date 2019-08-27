@@ -98,41 +98,7 @@ namespace Ali1688UnitTestProject
             Assert.IsNotNull(obj, "返回值空对象引用");
             Assert.IsTrue(!string.IsNullOrWhiteSpace(obj.Value<string>("id")), "发布失败");
         }
-        ////{"Appkey":"999922","BusType":"1688","UseServer":"CreateOrder","BusData":"{\"AppKey\":\"485676\",\"AppSecret\":\"4WSJAzHzqMc\",\"TokenKey\":\"256e2be5-e1f8-4565-8d35-325fdde69acc\",\"SubBiz\":\"subBiz\",\"SupplyNoteId\":\"1116408851886\",\"ReceiveAddressGroup\":{\"address\":\"宁波市象山县石浦镇昌国盐桥一桥\",\"areaCode\":\"330108\",\"fullName\":\"\",\"mobile\":\"\",\"phone\":\"\",\"postCode\":\"\"}}"}
-        //[TestMethod]
-        //public void TestCreateOrder()
-        //{
-        //    AliOrderHandle order = new AliOrderHandle();
-        //    string data = "{\"AppKey\":\"334362\",\"AppSecret\":\"w5v9Xu2sK2y5\",\"TokenKey\":\"66ff3a91-9580-4baa-b626-6002aabe766c\",\"SubBiz\":\"buyoffer\",\"SupplyNoteId\":\"1113861922028\",\"ReceiveAddressGroup\":{\"address\":\"宁波市象山县石浦镇昌国盐桥一桥\",\"areaCode\":\"330108\",\"fullName\":\"测试\",\"mobile\":\"17283948576\",\"phone\":\"\",\"postCode\":\"\"},\"AliOrderDetails\":[{\"QuoteItemId\":1388074822028,\"ItemCount\":9}]}";
-        //    order.analyseBussdata("CreateOrder", data);
-        //    string ret = order.doPost();
-        //    JObject obj = JsonConvert.DeserializeObject<JObject>(ret);
-        //    //Assert.IsNotNull(order.ToString());
-        //    Assert.IsNotNull(obj, "返回值空对象引用");
-        //    //Assert.IsTrue(!string.IsNullOrWhiteSpace(obj.Value<string>("id")), "发布失败");
-        //    obj = obj.Value<JObject>("orderResult");
-        //    if (!obj.Value<bool>("success"))
-        //    {
-        //        throw new Exception("订单创建失败");
-        //    }
-        //    JArray secbills = obj.Value<JArray>("commitResults");
-
-        //    Assert.IsTrue(!string.IsNullOrWhiteSpace(secbills[0].Value<string>("orderId")), "发布失败");
-
-        //}
-
-        //[TestMethod]
-        //public void TestCancelOrder()
-        //{
-        //    AliOrderHandle order = new AliOrderHandle();
-        //    string data = "{\"AppKey\":\"334362\",\"AppSecret\":\"w5v9Xu2sK2y5\",\"TokenKey\":\"0a54c693-6ca2-4765-abdf-c52b768dafbe\",\"OrderId\":206680598605498520,\"cancelReason\":\"i6p取消核准\",\"remark\":\"i6p取消核准\"}";
-        //    order.analyseBussdata("CancelOrder", data);
-        //    string ret = order.doPost();
-        //    JObject obj = JsonConvert.DeserializeObject<JObject>(ret);
-        //    Assert.IsNotNull(obj, "返回值空对象引用");
-        //    Assert.IsTrue(obj.Value<bool>("success"), obj.Value<string>("errorMessage"));
-
-        //}
+       
         [TestMethod]
         public void SimpleTest()
         {
