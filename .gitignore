@@ -1,6 +1,7 @@
 *.docx
 *.txt
 *.json
+*.sql
 bin/
 Api1688WebService/
 1688TestBusiness/bin/
