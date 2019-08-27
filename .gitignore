@@ -1,0 +1,9 @@
+*.docx
+*.txt
+*.json
+bin/
+Api1688WebService/
+1688TestBusiness/bin/
+1688TestBusiness/obj/
+Ali1688UnitTestProject/bin/
+Ali1688UnitTestProject/obj/
